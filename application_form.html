@@ -9,18 +9,19 @@
         table { border-spacing: 15px; }
     </style>
 </head>
+
 <body>
 
-    <form id="multiStepForm">
-        <div id="page1">
+    <form >
+        <div>
             <h2>Application Form*</h2>
             <table>
-                <tr><td>Name*</td><td><input type="text" placeholder="Enter Your Name"></td></tr>
-                <tr><td>Date*</td><td><input type="date"></td></tr>
-                <tr><td>Email ID*</td><td><input type="email" placeholder="Enter Your Email"></td></tr>
-                <tr><td>Contact Number*</td><td><input type="tel" placeholder="Enter Your Number"></td></tr>
+                <tr><td> Name* </td>            <td> <input type="text" placeholder="Enter Your Name"> </td> </tr>
+                <tr><td> Date* </td>            <td> <input type="date"></td></tr>
+                <tr><td> Email ID* </td>        <td> <input type="email" placeholder="Enter Your Email"> </td> </tr>
+                <tr><td> Contact Number* </td>  <td><input type="tel" placeholder="Enter Your Number"> </td> </tr>
                 <tr>
-                    <td>Select Country*</td>
+                    <td> Select Country* </td>
                     <td>
                         <select>
                             <option>Please Select Your Country</option>
@@ -36,15 +37,15 @@
                         <input type="radio" name="Gender"> Other
                     </td>
                 </tr>
-                <tr><td>Upload Documents*</td><td><input type="file"></td></tr>
-                <tr><td>Address*</td><td><textarea rows="3" cols="25" placeholder="Enter Your Address"></textarea></td></tr>
+                <tr> <td> Upload Documents* </td> <td> <input type="file"> </td> </tr>
+                <tr> <td>Address*</td><td><textarea rows="3" cols="25" placeholder="Enter Your Address"> </textarea> </td> </tr>
             </table>
             <br>
-            <button type="button" onclick="next()">Next</button>
+            <button type="button" > Next </button>
         </div>
 
-        <div id="page2" class="hidden">
-            <h2>Application Form - Page 02</h2>
+        <div>
+            <h2> Application Form - Page 02 </h2>
             <table>
                 <tr><td>Father's Name*</td><td><input type="text"></td></tr>
                 <tr><td>Salary Range (1L - 50L)</td><td><input type="range" min="1" max="50"></td></tr>
@@ -59,26 +60,15 @@
                     </td>
                 </tr>
                 <tr><td>Search Job</td><td><input type="search" placeholder="Example: Python developer"></td></tr>
-                <tr><td>Select the color that represent the nature of your job</td><td><input type="color"></td></tr>
-                <tr><td>Resident Number</td><td><input type="text" value="+91 97903 81462"></td></tr>
+                <tr><td>Select the color that represent <br>the nature of your job</td><td><input type="color"></td></tr>
+                <tr><td>Resident Number</td><td><input type="text" value="+91 98765 43210"></td></tr>
             </table>
             <p><input type="checkbox"> I hereby agree to all terms.</p>
             <br>
-            <button type="button" onclick="back()">Back</button>
+            <button type="button">Back</button>
             <button type="submit">Submit</button>
         </div>
     </form>
-
-    <script>
-        function next() {
-            document.getElementById('page1').classList.add('hidden');
-            document.getElementById('page2').classList.remove('hidden');
-        }
-        function back() {
-            document.getElementById('page2').classList.add('hidden');
-            document.getElementById('page1').classList.remove('hidden');
-        }
-    </script>
 
 </body>
 </html>
