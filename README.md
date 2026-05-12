@@ -6,3 +6,7 @@ Types of meadia :
 
 https://ajithkumarmohan11-creator.github.io/html.tasks/types_of_media.html
 
+Application Form :
+
+https://ajithkumarmohan11-creator.github.io/html.tasks/application_form.html
+
